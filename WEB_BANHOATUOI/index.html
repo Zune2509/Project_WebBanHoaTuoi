@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Red Store Ecom Website</title>
+    <link href="css/Style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "poppins", sans-serif;
+        }
+
+        .header {
+            background: radial-gradient( circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100% );
+        }
+
+            .header .row {
+                margin-top: 40px;
+            }
+
+        .container {
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+            nav ul {
+                display: inline-block;
+                list-style-type: none;
+            }
+
+
+                nav ul li {
+                    display: inline-block;
+                    margin-right: 20px;
+                }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .header .row {
+            margin-top: 70px;
+        }
+
+        .col-2 {
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+
+            .col-2 img {
+                max-width: 100%;
+                padding: 50px 0;
+            }
+
+            .col-2 h1 {
+                font-size: 50px;
+                line-height: 60px;
+                margin: 25px 0;
+            }
+
+
+        /*  */
+        .small-container {
+            min-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .categories {
+            margin: 70px 0;
+        }
+
+        .col-3 {
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+            .col-3 img {
+                width: 100%
+            }
+
+        /*  */
+
+        .title {
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+        }
+
+
+            .title::after {
+                content: "";
+                background: #14e4dc;
+                width: 80px;
+                height: 5px;
+                border-radius: 5px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        .col-4 {
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.6s;
+        }
+
+            .col-4 img {
+                width: 100%;
+            }
+
+            .col-4:hover {
+                transform: translateY(-5px);
+            }
+
+        h4 {
+            color: #555;
+            font-size: normal;
+        }
+
+        .rating .fa {
+            color: #ff523b;
+        }
+
+
+        /* QCSP new*/
+        .offer {
+            background: radial-gradient( circle, rgb(75, 187, 29) 0%, rgb(211, 214, 231) 100%);
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+
+        .col-2 .offer-img {
+            padding: 50px;
+        }
+
+        small {
+            color: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff523b;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+        /* đổi màu khi rê chuột vào btn */
+        .btn {
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+
+            .btn:hover {
+                background-color: orange;
+                color: white;
+            }
+
+        /*--*/
+        /* btn2*/
+        .btn1 {
+            display: inline-block;
+            background: rgba(63, 94, 251, 1);
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+
+        btn1 {
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+
+        .btn1:hover {
+            background-color: orange;
+            color: white;
+        }   
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/4c12fbe74302995cc013.jpg" width="100px" />
+                </div>
+                <nav>
+                    <ul id="MeneItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Category</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="./images//cart.png" width="25px" height="25px" />
+
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1> HoaStore <br>Hoa Trong nuoc</h1>
+
+                    <p>
+                        Hoa the hien tinh yeu doi lua, la sac dep do thien nhien ban tang
+                        <br> Hay yeu quy nhung bong hoa nhu yeu quy chinh ban than cua chung ta !!!
+                    </p>
+                    <a href="" class="btn">Explore Now &#10132;</a>
+                </div>
+                <div class="col-2">
+                    <img src="./images/hoacuc.jpg" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <h2 class="title">😙</h2>
+    <div class="small-container">
+        <h2 class="title">Hoa Ban Chay</h2>
+        <div class="categories">
+            <div class="row">
+                <div class="col-3">
+                    <img src="./images/hoacuc.jpg" />
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4>Tên SP: Hoa Cuc</h4>
+                    <p> Noi Trong: Da Lat</p>
+                    <p> Giá bán: 100.000đ / 1 bo hoa</p>
+                    <div class="button">
+
+                        <a href="#" onlick="buyNow(); return false;" class="btn1">Chi Tiết &#10132;</a>
+                        <a href="#" onlick="buyNow(); return false;" class="btn1">Thêm Vào Giỏ Hàng &#10132;</a>
+
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="./images/hoahong.jpg">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4>Tên SP: Hoa Hongg </h4>
+                    <p> Noi Trong: Da Lat </p>
+                    <p> Giá bán: 99.000đ< / 1 bo hoa <p>
+                    <div class="button">
+                        <a href="#" onlick="buyNow(); return false;" class="btn1">Chi Tiết &#10132;</a>
+                        <a href="#" onlick="buyNow(); return false;" class="btn1">Thêm Vào Giỏ Hàng &#10132;</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="./images/hoaly.png">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <h4>Tên SP: Hoa Ly </h4>
+                    <p>Noi Trong: Da Lat</p>
+                    <p>Giá bán: 88.200 ₫ / 1 bo hoa </p>
+                    <div class="button">
+                        <a href="#" onlick="buyNow(); return false;" class="btn1">Chi Tiết &#10132;</a>
+                        <a href="#" onlick="buyNow(); return false;" class="btn1">Thêm Vào Giỏ Hàng &#10132;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <h2 class="title">Hoa Giam Gia</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="./images/hoamaudon.jpg" />
+
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <h4>Tên SP: Hoa Mau Don </h4>
+                <p>Noi Trong: Da Lat</p>
+                <p>Giá bán: 88.000 ₫ 9̶6̶.̶0̶0̶0̶đ̶ / 1 bo hoa</p>
+                <div class="button">
+                    <a href="#" onlick="buyNow(); return false;" class="btn1">Chi Tiết &#10132;</a>
+                    <a href="#" onlick="buyNow(); return false;" class="btn1"> <input type="image" src="./images/cart.png" width="25px" height="25px" /> &#10132; </a>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <img src="./images/hoasen.jpg" />
+
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <h4>Tên SP: Hoa Sen </h4>
+                <p>Noi Trong: Thap Muoi </p>
+                <p>Giá bán: 65.000 ₫ 7̶7̶.̶0̶0̶0̶đ̶ / 1 bo hoa (gom 3 bong hoa)</p>
+                <div class="button">
+                    <a href="#" onlick="buyNow(); return false;" class="btn1">Chi Tiết &#10132;</a>
+                    <a href="#" onlick="buyNow(); return false;" class="btn1"> <input type="image" src="./images/cart.png" width="25px" height="25px" /> &#10132; </a>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <img src="./images/hoatulip.jpg" />
+
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <h4>Tên SP: Hoa Tulip </h4>
+                <p>Noi Trong: Hue </p>
+                <p>Giá bán: 145.000 ₫ 1̶7̶0̶.̶0̶0̶0̶đ̶ / 1 bo hoa</p>
+                <div class="button">
+                    <a href="#" onlick="buyNow(); return false;" class="btn1">Chi Tiết &#10132;</a>
+                    <a href="#" onlick="buyNow(); return false;" class="btn1"> <input type="image" src="./images/cart.png" width="25px" height="25px" /> &#10132; </a>
+                </div>
+            </div>
+
+  
+    <!-- SP new-->
+    <h2 class="title">San Pham Moi Nhap Khau Tu Nuoc Ngoai</h2>
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="./images/hoabingan.jpg" class="offer-img">
+                </div>
+
+                <div class="col-2">
+
+                    <h1>HOA BI NGAN</h1>
+                    <p>SAN PHAM MOI RA MAT NOI VE TINH YEU, SU SONG VA CAI CHET</p>
+
+                    <small>
+                        Day la loai hoa hiem kho tim va duoc trong o Nhat Ban noi ma cai dep duoc xem trong nhat
+                    </small>
+
+                    <h4> Giá Bán: 317.000đ 3̶3̶7̶.̶0̶0̶0̶đ̶ / 3 bong hoa </h4>
+                    <div class="button">
+                        <a href="#" onlick="buyNow(); return false;" class="btn">Buy Now &#10132;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="button">
+        <a href="#" onlick="buyNow(); return false;" class="btn">Quay lại đầu trang &#10132;</a>
+    </div>
+
+   
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+    function buyNow() {
+        question = confim("Bạn muốn mua sản phẩm này ?");
+        if (question != false) {
+            alert('Cảm ơn bạn đã mua sản phẩm của chúng tôi <3')
+        }
+    }
+</script>
